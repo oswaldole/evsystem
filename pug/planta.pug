@@ -1,0 +1,70 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title Planta
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Informacion General
+          li.breadcrumb-item.active Planta
+        .row
+          .col-sm-12
+            h1.text-center Planta
+            hr
+          .col-sm-12
+            form
+              .col-sm-12
+                h4.fondo1 Nueva Planta
+              form.form-group
+                .espaciador.form-group.col-sm-12
+                  label.form-control-label.col-sm-2
+                    span Nombre
+                  .col-sm-12
+                    input.form-control(type='text')
+                .espaciador.form-group.col-sm-12
+                  label.form-control-label.col-sm-2
+                    span Telefono
+                  .col-sm-12
+                    input.form-control(type='tel')
+                .espaciador.form-group.col-sm-12
+                  label.form-control-label.col-sm-2
+                    span Correo
+                  .col-sm-12
+                    input.form-control(type='email')
+                .espaciador.form-group.col-sm-12
+                  label.form-control-label.col-sm-2
+                    span Encargado
+                  .col-sm-12
+                    input.form-control(type='text')
+              .row
+                .col-sm-12.form-group
+                  button.btn.btn-primary.btn-lg.pull-right(type='submit') Enviar
+      
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug

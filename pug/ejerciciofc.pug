@@ -1,0 +1,51 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title Orden de Trabajo
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Calendario
+          li.breadcrumb-item.active Nueva Orden 
+        .row
+          .col-sm-12
+            h1.text-center Calendario
+            hr
+          #calendar.col-sm-12
+
+            
+          .col-sm-12.form-group
+            button.btn.btn-primary.btn-lg.pull-right(type='submit') Enviar
+      
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug
+
+      link(href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.min.css', rel='stylesheet')
+      link(href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.print.css', rel='stylesheet')
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.min.js")

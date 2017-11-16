@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Gestion de Casos</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-evsys fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">EVSYSTEM</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Informacion General">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-list-alt"></i>
+            <span class="nav-link-text">Informacion General</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a class="nav-link" href="cliente.html">
+                <i class="fa fa-fw fa-puzzle-piece"></i>
+                <span>Cliente Empresa</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="personal_trabajo.html">
+                <i class="fa fa-fw fa-inbox"></i>
+                <span>Personal de trabajo</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="planta.html">
+                <i class="fa fa-fw fa-industry"></i>
+                <span>Planta</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="activos.html">
+                <i class="fa fa-fw fa-sitemap"></i>
+                <span>Activos</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="componentes.html">
+                <i class="fa fa-fw fa-crop"></i>
+                <span>Componentes</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reportes PdM">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-gears"></i>
+            <span class="nav-link-text">Reportes PdM</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents2">
+            <li>
+              <a class="nav-link" href="PdM Vibracion.html">
+                <i class="fa fa-fw fa-bullseye"></i>
+                <span>Vibraciones</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-thermometer-empty"></i>
+                <span>Termografias</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-calculator"></i>
+                <span>Analisis de Fallas </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="I-Condition">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-wifi"></i>
+            <span class="nav-link-text">I-Condition</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="EV-Lube">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents3" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">EV-Lube</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents3">
+            <li>
+              <a class="nav-link" href="ev_lube.html">
+                <i class="fa fa-fw fa-tint"></i>
+                <span>Lubricantes</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="plan_lubricacion.html">
+                <i class="fa fa-fw fa-book"></i>
+                <span>Plan de Lubricación</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-road"></i>
+                <span>Rutas de Lubricación</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-bar-chart"></i>
+                <span>Reportes </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestiión de Casos">
+          <a class="nav-link" href="casos.html">
+            <i class="fa fa-fw fa-folder-open"></i>
+            <span class="nav-link-text">Gestión de Casos</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Orden de Trabajo">
+          <a class="nav-link" href="orden_trabajo.html">
+            <i class="fa fa-fw fa-thumb-tack"></i>
+            <span class="nav-link-text">Orden de Trabajo</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestión de Servicios">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-cubes"></i>
+            <span class="nav-link-text">Gestión de Servicios</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Confiabilidad">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents4" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-handshake-o"></i>
+            <span class="nav-link-text">Confiabilidad</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents4">
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-line-chart"></i>
+                <span>RCM</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-area-chart"></i>
+                <span>AMEF</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Salir</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Gestion de Casos</a>
+        </li>
+        <li class="breadcrumb-item active">Nuevo Caso </li>
+      </ol>
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="text-center">Casos de Trabajo</h1>
+          <hr>
+        </div>
+        <div class="col-sm-12">
+          <form class="form-inline">
+            <div class="col-sm-12">
+              <h4 class="fondo1">Nuevo Caso</h4></div>
+            <form class="form-group">
+              <div class="form-group col-sm-4 col-md-4">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Numero de caso:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Tipo:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selTipo">
+                    <option>Mecánica</option>
+                    <option>Eléctrica</option>
+                    <option>Estructura</option>
+                    <option>Otra</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Fecha</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+            </form>
+            <div class="col-sm-12 mt-3">
+              <h4 class="fondo1">Información del activo</h4></div>
+            <form class="form-inline">
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>ID:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selId">
+                    <option>ID1</option>
+                    <option>ID2</option>
+                    <option>ID3</option>
+                    <option>ID4 </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Sistema:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selSistema">
+                    <option>Sistema 1</option>
+                    <option>Sistema 2</option>
+                    <option>Sistema 3</option>
+                    <option>Sistema 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Área:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selArea">
+                    <option>Área 1</option>
+                    <option>Área 2</option>
+                    <option>Área 3</option>
+                    <option>Área 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Respontable:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selResponsable">
+                    <option>Alta</option>
+                    <option>Media</option>
+                    <option>Baja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Respontable:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selResponsable">
+                    <option>Pedro Perez</option>
+                    <option>José Peralta</option>
+                    <option>Ramon Lopez</option>
+                    <option>Andres Guzman</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <div class="col-sm-12 mt-3">
+              <h4 class="fondo1">Información del caso</h4></div>
+            <form class="form-inline">
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Origen:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Estado:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <select class="form-control" id="selResponsable">
+                    <option>Estado 1</option>
+                    <option>Estado 2</option>
+                    <option>Estado 3</option>
+                    <option>Estado 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group col-sm-4 col-md-4 mb-3">
+                <label class="form-control-label col-sm-12 col-md-4">
+                  <span>Fecha de Origen:</span>
+                </label>
+                <div class="col-sm-12 col-md-8 col-xl-8">
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+            </form>
+            <div class="col-sm-12 mt-3">
+              <h4 class="fondo1">Actividad de caso</h4></div>
+            <form class="form-group">
+              <div class="form-group col-sm-12 mb-3">
+                <label class="form-control-label col-sm-2">
+                  <span>Fecha:</span>
+                </label>
+                <div class="col-sm-12">
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+              <div class="form-group col-sm-12 mb-3">
+                <label class="form-control-label col-sm-2">
+                  <span>Accion:</span>
+                </label>
+                <div class="col-sm-12">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group col-sm-12 mb-3">
+                <label class="form-control-label col-sm-2">
+                  <span>Resultado:</span>
+                </label>
+                <div class="col-sm-12">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group col-sm-12 mb-3">
+                <label class="form-control-label col-sm-2">
+                  <span>Comentario:</span>
+                </label>
+                <div class="col-sm-12">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+            </form>
+          </form>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-primary btn-lg pull-right" type="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © EV-tech 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script personalisados-->
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </div>
+</body>
+
+</html>

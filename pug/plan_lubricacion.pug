@@ -1,0 +1,114 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title Plan de Lubricacion
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') EV-Lube
+          li.breadcrumb-item.active Plan de Lubricacion 
+        .row
+          .col-sm-12
+            h1.text-center Plan de Lubricacion 
+            hr
+          .col-sm-12
+            form.form-inline
+              .col-sm-12
+                h4.fondo1 Lubricante
+              form.form-group
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Nombre del equipo
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Area
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Codigo
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Lubricante
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Frecuencia
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#sel1.form-control
+                          option Días
+                          option Semanas
+                          option Meses
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Cantidad
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Metodo
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Responsable
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Marca de proveedor
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Herramientas
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.espaciador
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Tiempo estimado de la tarea
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')          
+                .col-sm-12.form-group.espaciador
+                  label.control-label.col-sm-3 Puntos de aplicacion
+                  textarea.form-control.col-sm-12
+                .col-sm-12.form-group.espaciador
+                  label.control-label.col-sm-2 Subir Imagen 
+                  input#exampleInputFile.form-control-file(type="file" aria-describedby="fileHelp" accept="image/*")
+            .row
+              .col-sm-12.form-group
+                button.btn.btn-primary.btn-lg.pull-right(type='submit') Enviar
+      
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug

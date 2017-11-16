@@ -1,0 +1,169 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title PdM-Vibracion
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Reportes PdM
+          li.breadcrumb-item.active Vibraciones
+        .row
+          .col-sm-12
+            h1.text-center Reporte PdM de Vibracion
+            hr
+          .col-sm-12
+            form.form-inline
+              .col-sm-12
+                h4.fondo1 Activos
+              form.form-group
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span TAG
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Linea
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text') 
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Estado de Activo
+                  .col-sm-12.col-md-8
+                    select.form-control#sel1
+                      option Admisible  
+                      option No Admisible
+                      option Con Falla
+                      option En Observacion
+                      option Condicion Operativa
+                      option Fuera de servicio   
+                      option Logistica Interna 
+                      option Condicion Insegura   
+                      option No medido
+                      option Parada de Planta
+                      option Reserva
+                .col-sm-12.form-group.espaciador
+                  label.control-label.col-sm-2 Diagnostico del Activo
+                  textarea.form-control.col-sm-12
+              .form-group.col-sm-12
+                hr        
+                h4.fondo1 Diagnostico de componentes
+                .table-responsive
+                  table.table.table-striped
+                    thead
+                      tr
+                        th Estado
+                        th Componentes
+                        th Diagnostico
+                    tfoot
+                      tr
+                        td
+                          button#agregar1.btn.btn-primary(type='button')
+                            | Nuevo Componente
+                        td
+                          button#borrar1.btn.btn-warning(type='button')
+                            | Eliminar Componente
+                    tbody
+                      tr#componente
+                        td
+                          select#sel2.form-control
+                            option Admisible  
+                            option No Admisible
+                            option Con Falla
+                            option En Observacion
+                            option Condicion Operativa
+                            option Fuera de servicio   
+                            option Logistica Interna 
+                            option Condicion Insegura   
+                            option No medido
+                            option Parada de Planta
+                            option Reserva
+                        td
+                          select#sel3.form-control
+                            option Componente 1
+                            option Componente 2
+                            option Componente 3
+                        td
+                          textarea.form-control(placeholder='Texto', rows='3')
+              .form-group.col-sm-12
+                hr        
+                h4.fondo1 Imagenes de Campo
+                .table-responsive
+                  table.table.table-striped
+                    thead
+                        tr
+                          th Imagen
+                          th Observacion
+                    tfoot
+                      tr
+                        td
+                          button#agregar2.btn.btn-primary(type='button')
+                            | Agregar
+
+                        td
+                          button#borrar2.btn.btn-warning(type='button')
+                            | Eliminar Anterior
+                    tbody
+                      tr
+                        td
+                          input#exampleInputFile.form-control-file(type="file" aria-describedby="fileHelp" accept="image/*") 
+                        td
+                          textarea.form-control(placeholder='Texto', rows='3')
+              .form-group.col-sm-12
+                hr        
+                h4.fondo1 Inspección
+                .col-sm-12
+                  form.form-group
+                    .form-group.col-sm-4.col-md-4
+                    label.form-control-label.col-sm-12.col-md-4
+                      span Inspector
+                    .col-sm-12.col-md-8.col-xl-8
+                      input.form-control(type='text')
+                    .form-group.col-sm-4.col-md-4
+                    label.form-control-label.col-sm-12.col-md-4
+                      span Analista
+                    .col-sm-12.col-md-8.col-xl-8
+                      input.form-control(type='text')
+                    .form-group.col-sm-4.col-md-4
+                    label.form-control-label.col-sm-12.col-md-4
+                      span Fecha de Diagnostico
+                    .col-sm-12.col-md-8.col-xl-8
+                      input.form-control(type='date')
+                    .form-group.col-sm-4.col-md-4
+                    label.form-control-label.col-sm-12.col-md-4
+                      span Fecha de Medicion
+                    .col-sm-12.col-md-8.col-xl-8
+                      input.form-control(type='date')
+            .row
+              .col-sm-12.form-group
+                button.btn.btn-primary.btn-lg.pull-right(type='submit') Enviar
+
+
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug

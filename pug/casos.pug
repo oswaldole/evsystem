@@ -1,0 +1,161 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title Gestion de Casos
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Gestion de Casos
+          li.breadcrumb-item.active Nuevo Caso 
+        .row
+          .col-sm-12
+            h1.text-center Casos de Trabajo
+            hr
+          .col-sm-12
+            form.form-inline
+              .col-sm-12
+                h4.fondo1 Nuevo Caso
+              form.form-group
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Numero de caso:
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Tipo:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selTipo.form-control
+                          option Mecánica
+                          option Eléctrica
+                          option Estructura
+                          option Otra
+                .form-group.col-sm-4.col-md-4
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Fecha
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='date')
+              .col-sm-12.mt-3
+                h4.fondo1 Información del activo
+              form.form-inline
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span ID:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selId.form-control
+                          option ID1
+                          option ID2
+                          option ID3
+                          option ID4 
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Sistema:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selSistema.form-control
+                          option Sistema 1
+                          option Sistema 2
+                          option Sistema 3
+                          option Sistema 4
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Área:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selArea.form-control
+                          option Área 1
+                          option Área 2
+                          option Área 3
+                          option Área 4
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Respontable:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selResponsable.form-control
+                          option Alta
+                          option Media
+                          option Baja
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Respontable:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selResponsable.form-control
+                          option Pedro Perez
+                          option José Peralta
+                          option Ramon Lopez
+                          option Andres Guzman
+              .col-sm-12.mt-3
+                h4.fondo1 Información del caso
+              form.form-inline
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Origen:
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='text')
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Estado:
+                  .col-sm-12.col-md-8.col-xl-8
+                    select#selResponsable.form-control
+                          option Estado 1
+                          option Estado 2
+                          option Estado 3
+                          option Estado 4
+                .form-group.col-sm-4.col-md-4.mb-3
+                  label.form-control-label.col-sm-12.col-md-4
+                    span Fecha de Origen:
+                  .col-sm-12.col-md-8.col-xl-8
+                    input.form-control(type='date')
+              .col-sm-12.mt-3
+                h4.fondo1 Actividad de caso
+              form.form-group
+                .form-group.col-sm-12.mb-3
+                  label.form-control-label.col-sm-2
+                    span Fecha:
+                  .col-sm-12
+                    input.form-control(type='date')  
+                .form-group.col-sm-12.mb-3
+                  label.form-control-label.col-sm-2
+                    span Accion:
+                  .col-sm-12
+                    input.form-control(type='text')
+                .form-group.col-sm-12.mb-3
+                  label.form-control-label.col-sm-2
+                    span Resultado:
+                  .col-sm-12
+                    input.form-control(type='text')
+                .form-group.col-sm-12.mb-3
+                  label.form-control-label.col-sm-2
+                    span Comentario:
+                  .col-sm-12
+                    input.form-control(type='text')                    
+            .row
+              .col-sm-12.form-group
+                button.btn.btn-primary.btn-lg.pull-right(type='submit') Enviar
+      
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug

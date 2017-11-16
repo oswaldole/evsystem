@@ -1,0 +1,135 @@
+// Navigation
+nav#mainNav.navbar.navbar-expand-lg.navbar-light.bg-evsys.fixed-top
+  a.navbar-brand(href='index.html') EVSYSTEM
+  button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarResponsive.collapse.navbar-collapse
+    ul#exampleAccordion.navbar-nav.navbar-sidenav
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Dashboard')
+        a.nav-link(href='index.html')
+          i.fa.fa-fw.fa-dashboard
+          span.nav-link-text
+            | Dashboard
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Informacion General')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-list-alt
+          span.nav-link-text
+            | Informacion General
+        ul#collapseComponents.sidenav-second-level.collapse
+          li
+            a.nav-link(href='cliente.html')
+              i.fa.fa-fw.fa-puzzle-piece
+              span
+                | Cliente Empresa
+          li
+            a.nav-link(href='personal_trabajo.html') 
+              i.fa.fa-fw.fa-inbox
+              span
+                | Personal de trabajo
+          li
+            a.nav-link(href='planta.html')
+              i.fa.fa-fw.fa-industry
+              span
+                | Planta
+          li
+            a.nav-link(href='activos.html')
+              i.fa.fa-fw.fa-sitemap
+              span
+                | Activos
+          li
+            a.nav-link(href='componentes.html')
+              i.fa.fa-fw.fa-crop
+              span
+                | Componentes
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Reportes PdM')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents2', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-gears
+          span.nav-link-text
+            | Reportes PdM
+        ul#collapseComponents2.sidenav-second-level.collapse
+          li
+            a.nav-link(href='PdM Vibracion.html')
+              i.fa.fa-fw.fa-bullseye
+              span
+                | Vibraciones
+          li
+            a.nav-link(href='#') 
+              i.fa.fa-fw.fa-thermometer-empty
+              span
+                | Termografias
+          li
+            a.nav-link(haref='#')
+              i.fa.fa-fw.fa-calculator
+              span
+                | Analisis de Fallas    
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='I-Condition')
+        a.nav-link(href='#')
+          i.fa.fa-fw.fa-wifi
+          span.nav-link-text
+            | I-Condition
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='EV-Lube')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents3', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-wrench
+          span.nav-link-text
+            | EV-Lube
+        ul#collapseComponents3.sidenav-second-level.collapse
+          li
+            a.nav-link(href='ev_lube.html')
+              i.fa.fa-fw.fa-tint
+              span
+                | Lubricantes
+          li
+            a.nav-link(href='plan_lubricacion.html') 
+              i.fa.fa-fw.fa-book
+              span
+                | Plan de Lubricación
+          li
+            a.nav-link(haref='#')
+              i.fa.fa-fw.fa-road
+              span
+                | Rutas de Lubricación
+          li
+            a.nav-link(haref='#')
+              i.fa.fa-fw.fa-bar-chart
+              span
+                | Reportes             
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Gestiión de Casos')
+        a.nav-link(href='casos.html')
+          i.fa.fa-fw.fa-folder-open
+          span.nav-link-text
+            | Gestión de Casos
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Orden de Trabajo')
+        a.nav-link(href='orden_trabajo.html')
+          i.fa.fa-fw.fa-thumb-tack
+          span.nav-link-text
+            | Orden de Trabajo
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Gestión de Servicios')
+        a.nav-link(href='#')
+          i.fa.fa-fw.fa-cubes
+          span.nav-link-text
+            | Gestión de Servicios
+      li.nav-item(data-toggle='tooltip', data-placement='right', title='Confiabilidad')
+        a.nav-link.nav-link-collapse.collapsed(data-toggle='collapse', href='#collapseComponents4', data-parent='#exampleAccordion')
+          i.fa.fa-fw.fa-handshake-o
+          span.nav-link-text
+            | Confiabilidad
+        ul#collapseComponents4.sidenav-second-level.collapse
+          li
+            a.nav-link(href='#')
+              i.fa.fa-fw.fa-line-chart
+              span
+                | RCM
+          li
+            a.nav-link(href='#') 
+              i.fa.fa-fw.fa-area-chart
+              span
+                | AMEF
+    ul.navbar-nav.sidenav-toggler
+      li.nav-item
+        a#sidenavToggler.nav-link.text-center
+          i.fa.fa-fw.fa-angle-left
+    ul.navbar-nav.ml-auto
+      li.nav-item
+        a.nav-link(data-toggle='modal', data-target='#exampleModal')
+          i.fa.fa-fw.fa-sign-out
+          | Salir

@@ -1,0 +1,209 @@
+doctype html
+html(lang='es')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title Reporte EV-Lube
+
+    include includes/css/core.pug
+
+    // Page level plugin CSS
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Dashboard
+          li.breadcrumb-item.active Mi Dashboard
+        // Area Chart Example
+        .h1.text-center EV-Lube
+        .row
+          .col-sm-6.mb-3
+            .card
+              .card-header
+                .h3 Bomba de Molde 3
+              .card-body(width='100%', height='60')
+                p Descripcion:
+                    br
+                    |  Potencia:
+                    br
+                    |  Tension:
+                    br
+                    |  Corriente:
+          .col-sm-6.mb-3
+            .card
+              .card-body
+                img(src="Imagen1.jpg", alt="Imagen de prueba" width='100%', height='100%')
+        .row
+          
+        .card.mb-3
+          .card-header
+            i.fa.fa-id-card-o
+            |  Datos
+          .card-body
+            .table-responsive
+                table.table.table-striped.table-bordered(width='100%', cellspacing='0')
+                    tbody
+                      tr
+                        td AREA: Secado
+                      tr
+                        td UBICACION: Sala de Bombeo 5
+                      tr
+                        td CODIGO EV-LUBE: 97864523
+                      tr
+                        td LUBRICANTE: 
+                      tr
+                        td PROVEEDOR: Venoco
+                      tr
+                        td FRECUENCIA: Mensual
+                      tr
+                        td RESPONSABLE: Juan Rojas
+                      tr
+                        td TIEMPO: 15 min
+    
+          .card-footer.small.text-muted
+            | Actualizado ayer a las 11:59 PM
+        .h2.text-center.mb-3 Registros(grasa)
+        .table-responsive
+            table.table.table-striped.table-bordered(width='100%', cellspacing='0')
+                thead
+                  tr
+                    th Punto Lub
+                    th Fecha Reg
+                    th Cantidad (g)
+                    th Temp. Inicio (C°)
+                    th Temp. Final (C°)
+                    th &#916 T (C°)
+                    th Acustica Inicio (RMS)
+                    th Acustica Final (RMS)
+                    th &#916 A (RMS)
+                    th Condicion Subestandar
+                    th Observaciones
+                tbody
+                  tr
+                    td 1
+                    td 25-04-2017
+                    td 60
+                    td 94
+                    td 71
+                    td 23
+                    td 800
+                    td 390
+                    td 410
+                    td 
+                    td
+                  tr
+                    td 2
+                    td 25-04-2017
+                    td N/A
+                    td 49
+                    td N/A
+                    td N/A
+                    td 400
+                    td N/A
+                    td N/A
+                    td 
+                    td Admisible
+                  tr
+                    td 1
+                    td 25-05-2017
+                    td N/A
+                    td 60
+                    td N/A
+                    td N/A
+                    td 376
+                    td N/A
+                    td N/A
+                    td 
+                    td Admisible
+                  tr
+                    td 2
+                    td 25-05-2017
+                    td 45
+                    td 70
+                    td 65
+                    td 5
+                    td 720
+                    td 391
+                    td 329
+                    td Fuga de lubricante a través del sello
+                    td
+                  tr
+                    td 1
+                    td 25-06-2017
+                    td N/A
+                    td 62
+                    td N/A
+                    td N/A
+                    td 395
+                    td N/A
+                    td N/A
+                    td 
+                    td Admisible 
+                  tr
+                    td 2
+                    td 25-06-2017
+                    td N/A
+                    td 50
+                    td N/A
+                    td N/A
+                    td 402
+                    td N/A
+                    td N/A
+                    td 
+                    td Admisible
+        .h2.text-center.mb-3 Tendencias
+        .row
+          .col-sm-6.mb-3
+            .card
+              .card-header
+                i.fa.fa-area-chart
+                |  Linea N°1
+              .card-body
+                canvas#miGraficoLineal(width='100%', height='60')
+              .card-footer.small.text-muted
+                | Actualizado ayer a las 11:59 PM
+          .col-sm-6.mb-3
+            .card
+              .card-header
+                i.fa.fa-area-chart
+                |  Linea N°2
+              .card-body
+                canvas#miGraficoLineal2(width='100%', height='60')
+              .card-footer.small.text-muted
+                | Actualizado ayer a las 11:59 PM
+        // /Card Columns
+          
+
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      // Page level plugin JavaScript
+      script(src='vendor/chart.js/Chart.min.js')
+      script(src='vendor/datatables/jquery.dataTables.js')
+      script(src='vendor/datatables/dataTables.bootstrap4.js')
+
+      include includes/js/custom.pug
+
+      // Custom scripts for this page
+      script(src='js/sb-admin-datatables.min.js')
+      script(src='js/sb-admin-charts.min.js')

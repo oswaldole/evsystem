@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Reporte EV-Lube</title>
+  <!-- Bootstrap core CSS-->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-evsys fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">EVSYSTEM</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Informacion General">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-list-alt"></i>
+            <span class="nav-link-text">Informacion General</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents">
+            <li>
+              <a class="nav-link" href="cliente.html">
+                <i class="fa fa-fw fa-puzzle-piece"></i>
+                <span>Cliente Empresa</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="personal_trabajo.html">
+                <i class="fa fa-fw fa-inbox"></i>
+                <span>Personal de trabajo</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="planta.html">
+                <i class="fa fa-fw fa-industry"></i>
+                <span>Planta</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="activos.html">
+                <i class="fa fa-fw fa-sitemap"></i>
+                <span>Activos</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="componentes.html">
+                <i class="fa fa-fw fa-crop"></i>
+                <span>Componentes</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Reportes PdM">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents2" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-gears"></i>
+            <span class="nav-link-text">Reportes PdM</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents2">
+            <li>
+              <a class="nav-link" href="PdM Vibracion.html">
+                <i class="fa fa-fw fa-bullseye"></i>
+                <span>Vibraciones</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-thermometer-empty"></i>
+                <span>Termografias</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-calculator"></i>
+                <span>Analisis de Fallas </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="I-Condition">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-wifi"></i>
+            <span class="nav-link-text">I-Condition</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="EV-Lube">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents3" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-wrench"></i>
+            <span class="nav-link-text">EV-Lube</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents3">
+            <li>
+              <a class="nav-link" href="ev_lube.html">
+                <i class="fa fa-fw fa-tint"></i>
+                <span>Lubricantes</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="plan_lubricacion.html">
+                <i class="fa fa-fw fa-book"></i>
+                <span>Plan de Lubricación</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-road"></i>
+                <span>Rutas de Lubricación</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" haref="#">
+                <i class="fa fa-fw fa-bar-chart"></i>
+                <span>Reportes </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestiión de Casos">
+          <a class="nav-link" href="casos.html">
+            <i class="fa fa-fw fa-folder-open"></i>
+            <span class="nav-link-text">Gestión de Casos</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Orden de Trabajo">
+          <a class="nav-link" href="orden_trabajo.html">
+            <i class="fa fa-fw fa-thumb-tack"></i>
+            <span class="nav-link-text">Orden de Trabajo</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Gestión de Servicios">
+          <a class="nav-link" href="#">
+            <i class="fa fa-fw fa-cubes"></i>
+            <span class="nav-link-text">Gestión de Servicios</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Confiabilidad">
+          <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents4" data-parent="#exampleAccordion">
+            <i class="fa fa-fw fa-handshake-o"></i>
+            <span class="nav-link-text">Confiabilidad</span>
+          </a>
+          <ul class="sidenav-second-level collapse" id="collapseComponents4">
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-line-chart"></i>
+                <span>RCM</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fa fa-fw fa-area-chart"></i>
+                <span>AMEF</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Salir</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Mi Dashboard</li>
+      </ol>
+      <!-- Area Chart Example-->
+      <div class="h1 text-center">EV-Lube</div>
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <div class="h3">Bomba de Molde 3</div>
+            </div>
+            <div class="card-body" width="100%" height="60">
+              <p>Descripcion:
+                <br> Potencia:
+                <br> Tension:
+                <br> Corriente:</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="Imagen1.jpg" alt="Imagen de prueba" width="100%" height="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="card mb-3">
+        <div class="card-header">
+          <i class="fa fa-id-card-o"></i> Datos</div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered" width="100%" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>AREA: Secado</td>
+                </tr>
+                <tr>
+                  <td>UBICACION: Sala de Bombeo 5</td>
+                </tr>
+                <tr>
+                  <td>CODIGO EV-LUBE: 97864523</td>
+                </tr>
+                <tr>
+                  <td>LUBRICANTE: </td>
+                </tr>
+                <tr>
+                  <td>PROVEEDOR: Venoco</td>
+                </tr>
+                <tr>
+                  <td>FRECUENCIA: Mensual</td>
+                </tr>
+                <tr>
+                  <td>RESPONSABLE: Juan Rojas</td>
+                </tr>
+                <tr>
+                  <td>TIEMPO: 15 min</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
+      </div>
+      <div class="h2 text-center mb-3">Registros(grasa)</div>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered" width="100%" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Punto Lub</th>
+              <th>Fecha Reg</th>
+              <th>Cantidad (g)</th>
+              <th>Temp. Inicio (C°)</th>
+              <th>Temp. Final (C°)</th>
+              <th>&#916 T (C°)</th>
+              <th>Acustica Inicio (RMS)</th>
+              <th>Acustica Final (RMS)</th>
+              <th>&#916 A (RMS)</th>
+              <th>Condicion Subestandar</th>
+              <th>Observaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>25-04-2017</td>
+              <td>60</td>
+              <td>94</td>
+              <td>71</td>
+              <td>23</td>
+              <td>800</td>
+              <td>390</td>
+              <td>410</td>
+              <td> </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>25-04-2017</td>
+              <td>N/A</td>
+              <td>49</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>400</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td> </td>
+              <td>Admisible</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>25-05-2017</td>
+              <td>N/A</td>
+              <td>60</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>376</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td> </td>
+              <td>Admisible</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>25-05-2017</td>
+              <td>45</td>
+              <td>70</td>
+              <td>65</td>
+              <td>5</td>
+              <td>720</td>
+              <td>391</td>
+              <td>329</td>
+              <td>Fuga de lubricante a través del sello</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>25-06-2017</td>
+              <td>N/A</td>
+              <td>62</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>395</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td> </td>
+              <td>Admisible </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>25-06-2017</td>
+              <td>N/A</td>
+              <td>50</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td>402</td>
+              <td>N/A</td>
+              <td>N/A</td>
+              <td> </td>
+              <td>Admisible</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="h2 text-center mb-3">Tendencias</div>
+      <div class="row">
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-area-chart"></i> Linea N°1</div>
+            <div class="card-body">
+              <canvas id="miGraficoLineal" width="100%" height="60"></canvas>
+            </div>
+            <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <div class="card">
+            <div class="card-header">
+              <i class="fa fa-area-chart"></i> Linea N°2</div>
+            <div class="card-body">
+              <canvas id="miGraficoLineal2" width="100%" height="60"></canvas>
+            </div>
+            <div class="card-footer small text-muted">Actualizado ayer a las 11:59 PM</div>
+          </div>
+        </div>
+      </div>
+      <!-- /Card Columns-->
+    </div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © EV-tech 2017</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- script personalisados-->
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script>
+  </div>
+</body>
+
+</html>
